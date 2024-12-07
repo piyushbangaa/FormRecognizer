@@ -1,7 +1,8 @@
 PDF Text Extractor
+
 A Python-based tool that extracts text from PDF files using the fitz (PyMuPDF) library. This tool processes PDF documents to extract and save their content as plain text files.
 
-Features
+Features:-
 Text Extraction: Extracts all the text content from PDF files,Complex Columns, including multi-page documents.
 Output: Saves the extracted text as a .txt file, with the same name as the input PDF.
 Requirements
@@ -55,13 +56,14 @@ Example Output
 The extracted text from the PDF will be saved in the output.txt file with the following structure:
 
 mathematica
-Copy code
+
 Extracted Text:
 <Extracted content of the PDF here>
 Contributing
 Feel free to fork the repository and submit pull requests. Contributions are welcome!
 
 Additional Details:
+
 fitz (PyMuPDF) Overview:
 PyMuPDF (imported as fitz) is a Python binding for the MuPDF library. It allows you to interact with and extract content from PDF, XPS, and other document formats efficiently.
 For more information about the library, check out the official documentation.
