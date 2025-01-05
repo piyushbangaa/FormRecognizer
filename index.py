@@ -10,7 +10,7 @@ def extract_text_from_pdf(pdf_path):
         text += page.get_text("text")  
     return text
 
-# Function to merge results (no tables to be processed)
+# Function to merge results (no tables to be processed))
 def process_pdf(pdf_path):
     print("Extracting text")
     pdf_text = extract_text_from_pdf(pdf_path)
