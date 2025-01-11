@@ -29,7 +29,7 @@ def save_results_to_txt(pdf_path, results):
     
     print(f"Results saved to {output_txt_path}")
 
-pdf_path = "example.pdf"  #(replace it with the pdf you want to parse)
+pdf_path = "example.pdf"  #replace it with the pdf you want to parse
 results = process_pdf(pdf_path)
 save_results_to_txt(pdf_path, results)
 
