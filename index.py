@@ -1,7 +1,6 @@
-import fitz  # PyMuPDF
+import fitz 
 import os
 
-# Function to extract text from a PDF 
 def extract_text_from_pdf(pdf_path):
     doc = fitz.open(pdf_path)
     text = ""
@@ -10,7 +9,6 @@ def extract_text_from_pdf(pdf_path):
         text += page.get_text("text")  
     return text
 
-# Function to merge results (no tables to be processed))
 def process_pdf(pdf_path):
     print("Extracting text")
     pdf_text = extract_text_from_pdf(pdf_path)
@@ -29,7 +27,7 @@ def save_results_to_txt(pdf_path, results):
     
     print(f"Results saved to {output_txt_path}")
 
-pdf_path = "example.pdf"  #replace it with the pdf you want to parse
+pdf_path = "example.pdf"  
 results = process_pdf(pdf_path)
 save_results_to_txt(pdf_path, results)
 
